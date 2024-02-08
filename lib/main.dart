@@ -18,7 +18,7 @@ Future<void> main() async {
           create: (context) => DarkThemeProvider(true),
         ),
         ChangeNotifierProvider(
-          create: (context) => SearchStartLocationModel(),
+          create: (context) => SearchLocationModel(),
         ),
       ],
       child: const MyApp(),

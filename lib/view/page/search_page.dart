@@ -3,8 +3,7 @@ import 'package:weather_app/controller/search_controller.dart';
 import 'package:weather_app/model/search_location_model.dart';
 
 class CitySearchDelegate extends SearchDelegate<String> {
-  final SearchStartLocationModel searchStartLocationModel =
-      SearchStartLocationModel();
+  final SearchLocationModel searchStartLocationModel = SearchLocationModel();
 
   @override
   Widget buildSuggestions(BuildContext context) {

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:weather_app/view/widgets/utils/api_key.dart';
 
-class SearchStartLocationModel extends ChangeNotifier {
+class SearchLocationModel extends ChangeNotifier {
   String _sessionToken = "";
   List<dynamic> data = [];
   String get sessionToken => _sessionToken;
@@ -20,8 +20,8 @@ class SearchStartLocationModel extends ChangeNotifier {
   }
 }
 
-class SearchStartLocationFuntion {
-  void onChange(String input, SearchStartLocationModel model) async {
+class SearchLocationFuntion {
+  void onChange(String input, SearchLocationModel model) async {
     String baseUrl =
         "https://maps.googleapis.com/maps/api/place/autocomplete/json";
     String request =
