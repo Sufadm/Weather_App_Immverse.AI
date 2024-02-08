@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
       builder: (context, provider, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'ImmersiveAI Task',
+          title: 'ImmverseAI Task',
           theme: provider.darkTheme ? ThemeData.dark() : ThemeData.light(),
           home: const HomePage(),
         );
