@@ -15,7 +15,7 @@ class CitySearchDelegate extends SearchDelegate<String> {
         } else if (snapshot.hasError) {
           return Center(child: Text('Error: ${snapshot.error}'));
         } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-          return const Center(child: Text('No suggestions available'));
+          return const Center(child: Text('City not available'));
         } else {
           return ListView(
             children: snapshot.data!.map((suggestion) {
