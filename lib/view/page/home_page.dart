@@ -52,11 +52,17 @@ class _HomePageState extends State<HomePage> {
             SizedBox(
               height: 60,
               child: TextFormField(
+                readOnly: true,
                 onTap: () async {
+                  FocusScopeNode currentfocus = FocusScope.of(context);
+                  if (!currentfocus.hasPrimaryFocus) {
+                    currentfocus.unfocus();
+                  }
                   final city = await showSearch<String>(
                     context: context,
                     delegate: CitySearchDelegate(),
                   );
+
                   if (city != null) {
                     Provider.of<WeatherService>(context, listen: false)
                         .getCityWeather(city)
