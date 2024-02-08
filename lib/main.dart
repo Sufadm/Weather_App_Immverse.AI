@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:weather_app/model/search_location_model.dart';
-import 'package:weather_app/model/theme_model.dart';
-import 'package:weather_app/controller/weather_service_controller.dart';
+import 'package:weather_app/controller/provider/search_location_model.dart';
+import 'package:weather_app/controller/provider/theme_model.dart';
+import 'package:weather_app/controller/services/weather_service_controller.dart';
 import 'package:weather_app/model/weather_ui_model.dart';
 import 'package:weather_app/view/page/home_page.dart';
 

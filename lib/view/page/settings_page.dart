@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:weather_app/model/theme_model.dart';
+import 'package:weather_app/controller/provider/theme_model.dart';
 import 'package:weather_app/view/widgets/utils/theme_colors.dart';
 
 class SettingsPage extends StatelessWidget {

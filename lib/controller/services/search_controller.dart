@@ -1,4 +1,4 @@
-import 'package:weather_app/model/search_location_model.dart';
+import 'package:weather_app/controller/provider/search_location_model.dart';
 
 class SearchCityController {
   final SearchLocationModel searchStartLocationModel = SearchLocationModel();

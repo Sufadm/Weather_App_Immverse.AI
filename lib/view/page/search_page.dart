@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/controller/search_controller.dart';
-import 'package:weather_app/model/search_location_model.dart';
+import 'package:weather_app/controller/services/search_controller.dart';
+import 'package:weather_app/controller/provider/search_location_model.dart';
 
 class CitySearchDelegate extends SearchDelegate<String> {
   final SearchLocationModel searchStartLocationModel = SearchLocationModel();

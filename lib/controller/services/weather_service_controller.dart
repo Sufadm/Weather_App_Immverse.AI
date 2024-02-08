@@ -17,8 +17,7 @@ class WeatherService {
         return {};
       }
     } catch (e) {
-      print('Error fetching weather data: $e');
-      return {};
+      return {'error': 'Failed to fetch current city weather data'};
     }
   }
 
@@ -37,8 +36,9 @@ class WeatherService {
         return {};
       }
     } catch (e) {
-      print('Error fetching current city weather data: $e');
-      return {};
+      return {
+        'error': 'An error occurred while fetching current city weather data'
+      };
     }
   }
 }

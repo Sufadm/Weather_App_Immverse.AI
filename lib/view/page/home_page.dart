@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:weather_app/controller/permission_controller.dart';
-import 'package:weather_app/controller/weather_service_controller.dart';
+import 'package:weather_app/controller/services/permission_controller.dart';
+import 'package:weather_app/controller/services/weather_service_controller.dart';
 import 'package:weather_app/model/weather_ui_model.dart';
 import 'package:weather_app/view/widgets/utils/theme_colors.dart';
 import 'package:weather_app/view/page/search_page.dart';

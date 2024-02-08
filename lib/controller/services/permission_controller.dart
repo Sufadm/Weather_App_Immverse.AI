@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
-import 'package:weather_app/controller/weather_service_controller.dart';
+import 'package:weather_app/controller/services/weather_service_controller.dart';
 import 'package:weather_app/model/weather_ui_model.dart';
 
 class RequestPermission {
   final BuildContext context;
-
   RequestPermission(this.context);
 
   Future<void> requestLocationPermissionAndFetchWeather() async {
@@ -16,7 +15,12 @@ class RequestPermission {
     if (status.isGranted) {
       _getCurrentLocationAndFetchWeather();
     } else {
-      print('Location permission denied');
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content:
+              Text('Failed to fetch weather data. Please try again later.'),
+        ),
+      );
     }
   }
 
